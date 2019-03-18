@@ -1,0 +1,11 @@
+<h1>Library Management System</h1>
+<div>
+  <label>Books: </label>
+  <select (change)="filterForeCasts($event.target.value)">
+      <option value="0">--All--</option>
+      <option *ngFor="let book of books" value={{book}}>
+          {{book}}
+      </option>
+  </select>
+</div>
+
